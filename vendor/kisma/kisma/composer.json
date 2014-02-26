@@ -1,0 +1,34 @@
+{
+	"name":        "kisma/kisma",
+	"description": "PHP Utility Belt",
+	"keywords":    [
+		"php", "php5", "library", "utility"
+	],
+	"homepage":    "https://github.com/kisma/kisma",
+	"type":        "library",
+	"license":     ["MIT"],
+	"config":      {
+		"bin-dir": "bin"
+	},
+	"authors":     [
+		{
+			"name":  "Jerry Ablan",
+			"email": "getkisma@gmail.com"
+		}
+	],
+	"require":     {
+		"php":                      ">=5.3.18",
+		"monolog/monolog":          "*",
+		"symfony/event-dispatcher": "~2.4@stable",
+		"symfony/http-foundation":  "~2.4@stable"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "@stable"
+	},
+	"autoload":    {
+		"psr-4": {
+			"Kisma\\": "src/Kisma"
+		},
+		"files": ["src/Kisma.php", "src/autoload.php"]
+	}
+}

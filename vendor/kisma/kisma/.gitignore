@@ -1,0 +1,8 @@
+log
+vendor
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries/
+tests/log/
+doc
+build/
