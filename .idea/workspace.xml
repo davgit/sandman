@@ -68,7 +68,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="72" selection-start="205" selection-end="205" vertical-scroll-proportion="0.14918415" vertical-offset="0" max-vertical-offset="858">
+            <state line="20" column="16" selection-start="971" selection-end="971" vertical-scroll-proportion="0.37296036" vertical-offset="0" max-vertical-offset="858">
               <folding />
             </state>
           </provider>
@@ -113,6 +113,7 @@
         <option value="$PROJECT_DIR$/phpunit.xml" />
         <option value="$PROJECT_DIR$/copyright.header.dist.php" />
         <option value="$PROJECT_DIR$/phpdoc.dist.xml" />
+        <option value="$PROJECT_DIR$/.gitattributes" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -312,9 +313,16 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="19" selection-start="99" selection-end="99" vertical-scroll-proportion="0.054360136" vertical-offset="0" max-vertical-offset="883">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="72" selection-start="205" selection-end="205" vertical-scroll-proportion="0.14918415" vertical-offset="0" max-vertical-offset="858">
+        <state line="20" column="16" selection-start="971" selection-end="971" vertical-scroll-proportion="0.37296036" vertical-offset="0" max-vertical-offset="858">
           <folding />
         </state>
       </provider>
