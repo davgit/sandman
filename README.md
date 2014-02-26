@@ -1,6 +1,6 @@
 # project-template
 
-## DreamFactory Project Boilerplate
+## DreamFactory Project Boilerplate v0.1.0
 
 A basic structure for any DreamFactory repository project. Contains all the ingredients for a fine stew. All set up for **git-flow** as well.
 
