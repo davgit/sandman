@@ -1,6 +1,0 @@
-log
-vendor
-.idea
-tests/log/
-tests/metrics/
-build/
