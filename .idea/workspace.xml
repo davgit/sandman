@@ -26,67 +26,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41f32de6-f5f6-4080-98ae-cbc4c0fec358" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/phpdoc.dist.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/COPYRIGHT" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/bin/phpunit" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/README.dist.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/copyright.header.dist.php" afterPath="$PROJECT_DIR$/.dreamfactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/yaml/Symfony/Component/Yaml" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/Symfony/Component/Yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog" afterPath="$PROJECT_DIR$/vendor/monolog/monolog" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-token-stream" afterPath="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/.gitignore" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/Bootstrap.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/Bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/Convert.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/Convert.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/Curl.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/Curl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Tools/DataReader.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Tools/DataReader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/ErrorHandler.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/ErrorHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/Hasher.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/Hasher.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Services/Network/HttpRequest.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Services/Network/HttpRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/Inflector.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/Inflector.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/tests/src/KismaTest.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/tests/src/KismaTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Enums/Levels.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Enums/Levels.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Components/LineWriter.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Components/LineWriter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/Log.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/Log.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/Option.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/Option.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/tests/src/Kisma/Core/Utility/OptionTest.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/tests/src/Kisma/Core/Utility/OptionTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/README.md" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/tests/src/Kisma/Core/Components/ReaderWriterTest.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/tests/src/Kisma/Core/Components/ReaderWriterTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/Scalar.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/Scalar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Seed.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Seed.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/SeedBag.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/SeedBag.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Services/SeedCli.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Services/SeedCli.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Events/SeedEvent.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Events/SeedEvent.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/tests/src/Kisma/Core/SeedTest.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/tests/src/Kisma/Core/SeedTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/Xml.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Utility/Xml.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Views/bootstrap/_bootstrap_container.html_head.twig" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Views/bootstrap/_bootstrap_container.html_head.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Views/bootstrap/_bootstrap_container.navbar.fluid.twig" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Views/bootstrap/_bootstrap_container.navbar.fluid.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Views/bootstrap/_bootstrap_container.navbar.twig" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Views/bootstrap/_bootstrap_container.navbar.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Views/bootstrap/_bootstrap_container.page_footer.twig" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Views/bootstrap/_bootstrap_container.page_footer.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Views/bootstrap/_bootstrap_container_fixed.twig" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Views/bootstrap/_bootstrap_container_fixed.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Views/bootstrap/_bootstrap_container_fluid.twig" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Views/bootstrap/_bootstrap_container_fluid.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Views/_error.twig" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Views/_error.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Views/widget/_layout_widget_ckeditor.twig" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/Kisma/Core/Views/widget/_layout_widget_ckeditor.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/src/autoload.php" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/src/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/composer.json" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/composer.lock" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/.idea/kisma.iml" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/.idea/kisma.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/phpunit.bat" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/phpunit.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpunit.xml" afterPath="$PROJECT_DIR$/phpunit.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/phpunit.xml" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/phpunit.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kisma/kisma/tests/src/Kisma/Core/Utility/test.html" afterPath="$PROJECT_DIR$/vendor/kisma/kisma/tests/src/Kisma/Core/Utility/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Commands/GreetCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sandman" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/template.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="template.iws" />
@@ -98,6 +43,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ComposerSettings" updatePackages="false">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <pharPath>/usr/local/bin/composer.phar</pharPath>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -109,7 +58,18 @@
     <favorites_list name="template" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="bootstrap.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/bootstrap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.50285715" vertical-offset="0" max-vertical-offset="496">
+              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -130,10 +90,13 @@
         <option value="$PROJECT_DIR$/phpunit.xml" />
         <option value="$PROJECT_DIR$/.dreamfactory.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/Commands/GreetCommand.php" />
+        <option value="$PROJECT_DIR$/sandman" />
+        <option value="$PROJECT_DIR$/src/bootstrap.php" />
       </list>
     </option>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="azrael" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
     <option name="y" value="-1" />
@@ -147,7 +110,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -170,13 +133,13 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
+              <option name="myItemId" value="Sandman" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
+              <option name="myItemId" value="Sandman" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -186,7 +149,21 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
+              <option name="myItemId" value="Sandman" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sandman" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sandman" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -198,6 +175,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sandman" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sandman" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sandman" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sandman" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Commands" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -206,10 +215,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="SearchEverywhereHistory" value=".n" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="web-ide.project.structure" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -236,7 +246,7 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1368" height="746" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
@@ -245,7 +255,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="17" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32943144" sideWeight="0.5" order="17" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
@@ -253,7 +263,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Assets" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -343,14 +353,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.dreamfactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11700183" vertical-offset="0" max-vertical-offset="547">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08391608" vertical-offset="0" max-vertical-offset="572">
@@ -379,6 +381,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3510055" vertical-offset="0" max-vertical-offset="560">
           <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/GreetCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38025594" vertical-offset="224" max-vertical-offset="1328">
+          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+          <folding>
+            <element signature="e#6#696#0" expanded="true" />
+            <element signature="e#739#785#0" expanded="true" />
+            <element signature="e#1549#2175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sandman">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55944055" vertical-offset="0" max-vertical-offset="572">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.dreamfactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5265082" vertical-offset="0" max-vertical-offset="547">
+          <caret line="18" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50285715" vertical-offset="0" max-vertical-offset="496">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
           <folding />
         </state>
       </provider>
