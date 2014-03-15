@@ -79,11 +79,13 @@ class Option
 	 */
 	public static function get( &$options = array(), $key, $defaultValue = null, $unsetValue = false )
 	{
+		//	Get many?
 		if ( is_array( $key ) )
 		{
 			return static::getMany( $options, $key, $defaultValue, $unsetValue );
 		}
 
+		//	Now a deep search
 		$_originalKey = $key;
 
 		//	Inflect pain!
@@ -222,6 +224,22 @@ class Option
 	}
 
 	/**
+	 * @param array $target
+	 * @param array $data Array of key => value pairs to set
+	 *
+	 * @return bool
+	 */
+	public static function setMany( &$target = array(), $data )
+	{
+		foreach ( Option::clean( $data ) as $_key => $_value )
+		{
+			static::set( $target, $_key, $_value );
+		}
+
+		return true;
+	}
+
+	/**
 	 * Sets an value in the given array at key.
 	 *
 	 * @param array|\ArrayAccess|object $options
@@ -232,6 +250,11 @@ class Option
 	 */
 	public static function set( &$options = array(), $key, $value = null )
 	{
+		if ( is_array( $key ) )
+		{
+			return static::setMany( $options, $key );
+		}
+
 		$_options = static::collapse( $key, $value );
 
 		foreach ( $_options as $_key => $_value )
@@ -470,5 +493,34 @@ class Option
 		}
 
 		return $_cleaned;
+	}
+
+	/**
+	 * Spins through an array and prefixes the keys with a string
+	 *
+	 * @param string $prefix
+	 * @param array  $data
+	 *
+	 * @return mixed
+	 */
+	public static function prefixKeys( $prefix, array $data = array() )
+	{
+		foreach ( static::clean( $data ) as $_key => $_value )
+		{
+			if ( is_numeric( $_key ) )
+			{
+				continue;
+			}
+
+			if ( is_array( $_value ) )
+			{
+				$_value = static::prefixKeys( $prefix, $_value );
+			}
+
+			$data[$prefix . $_key] = $_value;
+			unset( $data[$_key] );
+		}
+
+		return $data;
 	}
 }

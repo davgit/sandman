@@ -1,21 +1,20 @@
-# project-template
+# sandman
 
-## DreamFactory Project Boilerplate v0.1.0
+## DSP CLI Tool v0.1.0
 
-A basic structure for any DreamFactory repository project. Contains all the ingredients for a fine stew. All set up for **git-flow** as well.
-
-In all the files there are placeholders for you to replace with your project particulars. In all but ```composer.json```,
-the placeholders are surrounded by braces. In ```composer.json```, there are descriptive names so the schema validation passes. Just be aware.
+[![Build Status](http://tc.dreamfactory.com:8111/httpAuth/app/rest/builds/buildType:{project.build_type_id}/statusIcon)](http://tc.dreamfactory.com:8111/viewType.html?buildTypeId={project.build_type_id}&tab=buildTypeStatusDiv&guest=1)
+[![Dependency Status](https://www.versioneye.com/php/dreamfactory:{project.package_name}/badge.png)](https://www.versioneye.com/php/dreamfactory:{project.package_name})
+[![Latest Stable Version](https://poser.pugx.org/dreamfactory/{project.package_name}/version.png)](https://packagist.org/packages/dreamfactory/{project.package_name})
+[![Total Downloads](https://poser.pugx.org/dreamfactory/{project.package_name}/d/total.png)](https://packagist.org/packages/dreamfactory/{project.package_name})
 
 # Installation
 
-Clone this repository to your machine in the directory of your choosing.
+Add a line to your "require" section in your composer configuration:
 
-In your ```/path/to/project/.git/config``` file is a line that specifies the URL to your actual repository:
+	"require":           {
+		"dreamfactory/sandman": "@stable"
+	}
 
-	[remote.origin]
-		url = git@bitbucket.org:dreamfactory/project-template.git
+Run a composer update:
 
-After the clone completes successfully, change this URL to point to where your project actually resides.
-If you prefer, you may delete this line and use the ```git remote add``` command to add real repository to
-your git configuration file.
+    $ composer update

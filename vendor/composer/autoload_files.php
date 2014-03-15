@@ -6,6 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    $vendorDir . '/kisma/kisma/src/Kisma.php',
     $vendorDir . '/kisma/kisma/src/autoload.php',
 );

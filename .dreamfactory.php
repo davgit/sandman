@@ -1,8 +1,8 @@
 <?php
 /**
- * This file is part of the {project.description}
+ * This file is part of DreamFactory Sandman(tm)
  *
- * Copyright 2014 DreamFactory Software, Inc. <support@dreamfactory.com>
+ * Copyright (c) 2014 DreamFactory Software, Inc. <support@dreamfactory.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

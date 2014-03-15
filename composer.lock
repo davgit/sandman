@@ -3,38 +3,42 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "61ad37af5b0673e9327e9685ed23657b",
+    "hash": "dc3821ce3ccc10878664842533d772a3",
     "packages": [
         {
             "name": "kisma/kisma",
-            "version": "0.2.24",
+            "version": "0.2.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lucifurious/kisma.git",
-                "reference": "278e0c5529e6271f8104e0b177f56ff62b702118"
+                "reference": "ac0545a9303da0c32bb397a16475663448785f4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lucifurious/kisma/zipball/278e0c5529e6271f8104e0b177f56ff62b702118",
-                "reference": "278e0c5529e6271f8104e0b177f56ff62b702118",
+                "url": "https://api.github.com/repos/lucifurious/kisma/zipball/ac0545a9303da0c32bb397a16475663448785f4a",
+                "reference": "ac0545a9303da0c32bb397a16475663448785f4a",
                 "shasum": ""
             },
             "require": {
-                "monolog/monolog": "*",
+                "monolog/monolog": "@stable",
                 "php": ">=5.3.18",
                 "symfony/event-dispatcher": "~2.4@stable",
                 "symfony/http-foundation": "~2.4@stable"
             },
             "require-dev": {
-                "phpunit/phpunit": "@stable"
+                "phpunit/phpunit": "~3.7@stable"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.2.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Kisma\\": "src/Kisma"
                 },
                 "files": [
-                    "src/Kisma.php",
                     "src/autoload.php"
                 ]
             },
@@ -56,7 +60,7 @@
                 "php5",
                 "utility"
             ],
-            "time": "2014-02-24 15:25:01"
+            "time": "2014-03-13 14:29:25"
         },
         {
             "name": "monolog/monolog",
@@ -64,12 +68,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "0ac27c8089d0ec41728d96b5aa0dcad18fb0d459"
+                "reference": "db7e2aa311869aaf3c2cc76237b2beff05322629"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/0ac27c8089d0ec41728d96b5aa0dcad18fb0d459",
-                "reference": "0ac27c8089d0ec41728d96b5aa0dcad18fb0d459",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/db7e2aa311869aaf3c2cc76237b2beff05322629",
+                "reference": "db7e2aa311869aaf3c2cc76237b2beff05322629",
                 "shasum": ""
             },
             "require": {
@@ -91,6 +95,7 @@
                 "ext-mongo": "Allow sending log messages to a MongoDB server",
                 "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
                 "raven/raven": "Allow sending log messages to a Sentry server",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
                 "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
             },
             "type": "library",
@@ -123,7 +128,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-02-26 12:30:17"
+            "time": "2014-03-14 09:32:58"
         },
         {
             "name": "psr/log",
@@ -167,6 +172,61 @@
                 "psr-3"
             ],
             "time": "2014-01-18 15:33:09"
+        },
+        {
+            "name": "symfony/console",
+            "version": "v2.4.2",
+            "target-dir": "Symfony/Component/Console",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Console.git",
+                "reference": "940f217cbc3c8a33e5403e7c595495c4884400fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/940f217cbc3c8a33e5403e7c595495c4884400fe",
+                "reference": "940f217cbc3c8a33e5403e7c595495c4884400fe",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/event-dispatcher": "~2.1"
+            },
+            "suggest": {
+                "symfony/event-dispatcher": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Console\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Console Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-02-11 13:52:09"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -233,12 +293,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "0fa4996401cf4e97e621357b6f6a9efa8eee678e"
+                "reference": "eae69c6e62a0ce9e4a8518ff2aed6803b5b6aad5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/0fa4996401cf4e97e621357b6f6a9efa8eee678e",
-                "reference": "0fa4996401cf4e97e621357b6f6a9efa8eee678e",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/eae69c6e62a0ce9e4a8518ff2aed6803b5b6aad5",
+                "reference": "eae69c6e62a0ce9e4a8518ff2aed6803b5b6aad5",
                 "shasum": ""
             },
             "require": {
@@ -276,7 +336,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "http://symfony.com",
-            "time": "2014-02-18 15:41:30"
+            "time": "2014-03-04 07:36:44"
         }
     ],
     "packages-dev": [
@@ -480,12 +540,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "292f4d5772dad5a12775be69f4a8dd663b20f103"
+                "reference": "ad4e1e23ae01b483c16f600ff1bebec184588e32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/292f4d5772dad5a12775be69f4a8dd663b20f103",
-                "reference": "292f4d5772dad5a12775be69f4a8dd663b20f103",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/ad4e1e23ae01b483c16f600ff1bebec184588e32",
+                "reference": "ad4e1e23ae01b483c16f600ff1bebec184588e32",
                 "shasum": ""
             },
             "require": {
@@ -522,7 +582,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2013-10-21 14:03:39"
+            "time": "2014-03-03 05:10:30"
         },
         {
             "name": "phpunit/phpunit",
@@ -662,12 +722,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "e49a47d60348665261f6e279ba383241deb73cab"
+                "reference": "6194137af5f12fbcfc0cb21e269f47542b8beb47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/e49a47d60348665261f6e279ba383241deb73cab",
-                "reference": "e49a47d60348665261f6e279ba383241deb73cab",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/6194137af5f12fbcfc0cb21e269f47542b8beb47",
+                "reference": "6194137af5f12fbcfc0cb21e269f47542b8beb47",
                 "shasum": ""
             },
             "require": {
@@ -702,7 +762,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2014-02-24 16:21:51"
+            "time": "2014-03-03 12:53:01"
         }
     ],
     "aliases": [
@@ -711,10 +771,11 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "kisma/kisma": 0,
+        "symfony/console": 0,
         "phpunit/phpunit": 0
     },
     "platform": {
-        "php": ">=5.3.18"
+        "php": ">=5.4.0"
     },
     "platform-dev": [
 

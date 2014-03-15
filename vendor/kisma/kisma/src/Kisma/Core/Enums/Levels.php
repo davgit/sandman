@@ -22,6 +22,8 @@ namespace Kisma\Core\Enums;
 
 /**
  * Levels
+ *
+ * @deprecated in 0.2.27, to be removed in 0.3.0. {@see Kism\Core\Enums\LogLevels}
  */
 abstract class Levels extends SeedEnum implements \Kisma\Core\Interfaces\Levels
 {

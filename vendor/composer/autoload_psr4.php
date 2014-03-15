@@ -8,5 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'Kisma\\' => array($vendorDir . '/kisma/kisma/src/Kisma'),
-    'DreamFactory\\package-name\\' => array($baseDir . '/src'),
+    'DreamFactory\\Sandman\\' => array($baseDir . '/src'),
 );
