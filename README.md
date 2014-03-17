@@ -2,10 +2,10 @@
 
 ## DSP CLI Tool v0.1.0
 
-[![Build Status](http://tc.dreamfactory.com:8111/httpAuth/app/rest/builds/buildType:{project.build_type_id}/statusIcon)](http://tc.dreamfactory.com:8111/viewType.html?buildTypeId={project.build_type_id}&tab=buildTypeStatusDiv&guest=1)
-[![Dependency Status](https://www.versioneye.com/php/dreamfactory:{project.package_name}/badge.png)](https://www.versioneye.com/php/dreamfactory:{project.package_name})
-[![Latest Stable Version](https://poser.pugx.org/dreamfactory/{project.package_name}/version.png)](https://packagist.org/packages/dreamfactory/{project.package_name})
-[![Total Downloads](https://poser.pugx.org/dreamfactory/{project.package_name}/d/total.png)](https://packagist.org/packages/dreamfactory/{project.package_name})
+[![Build Status](http://tc.dreamfactory.com:8111/httpAuth/app/rest/builds/buildType:Sandman_Release/statusIcon)](http://tc.dreamfactory.com:8111/viewType.html?buildTypeId=Sandman_Release&tab=buildTypeStatusDiv&guest=1)
+[![Dependency Status](https://www.versioneye.com/php/dreamfactory:sandman/badge.png)](https://www.versioneye.com/php/dreamfactory:sandman)
+[![Latest Stable Version](https://poser.pugx.org/dreamfactory/sandman/version.png)](https://packagist.org/packages/dreamfactory/sandman)
+[![Total Downloads](https://poser.pugx.org/dreamfactory/sandman/d/total.png)](https://packagist.org/packages/dreamfactory/sandman)
 
 # Installation
 

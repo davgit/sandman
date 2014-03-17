@@ -25,20 +25,7 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41f32de6-f5f6-4080-98ae-cbc4c0fec358" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Utility/ErrorHandler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Commands/Init.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Commands/PermissionsCheck.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Commands/PermissionsFix.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Commands/Update.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Application.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Commands/GreetCommand.php" afterPath="$PROJECT_DIR$/src/Commands/Install.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sandman.php" afterPath="$PROJECT_DIR$/src/Sandman.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bootstrap.php" afterPath="$PROJECT_DIR$/src/bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="41f32de6-f5f6-4080-98ae-cbc4c0fec358" name="Default" comment="" />
     <ignored path="template.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
