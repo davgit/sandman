@@ -75,6 +75,7 @@ class Sandman extends Application
         }
 
         ErrorHandler::register();
+
         parent::__construct( $name, $version );
     }
 
