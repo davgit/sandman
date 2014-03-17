@@ -26,10 +26,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41f32de6-f5f6-4080-98ae-cbc4c0fec358" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sandman.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Utility/ErrorHandler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Commands/Init.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Commands/PermissionsCheck.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Commands/PermissionsFix.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Commands/Update.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Application.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Commands/GreetCommand.php" afterPath="$PROJECT_DIR$/src/Commands/Install.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sandman.php" afterPath="$PROJECT_DIR$/src/Sandman.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bootstrap.php" afterPath="$PROJECT_DIR$/src/bootstrap.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sandman" afterPath="$PROJECT_DIR$/sandman" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="template.iws" />
@@ -56,34 +63,7 @@
     <favorites_list name="template" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Sandman.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Sandman.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="50" selection-start="3741" selection-end="3741" vertical-scroll-proportion="0.71910113" vertical-offset="1408" max-vertical-offset="4960">
-              <folding>
-                <element signature="e#6#696#0" expanded="true" />
-                <element signature="e#730#772#0" expanded="true" />
-                <element signature="e#826#903#0" expanded="true" />
-                <element signature="e#1122#1153#0" expanded="true" />
-                <element signature="e#1195#1226#0" expanded="true" />
-                <element signature="e#1441#1509#0" expanded="true" />
-                <element signature="e#2073#2105#0" expanded="true" />
-                <element signature="e#2530#2562#0" expanded="true" />
-                <element signature="e#4743#4831#0" expanded="true" />
-                <element signature="e#5191#5223#0" expanded="true" />
-                <element signature="e#6099#6256#0" expanded="true" />
-                <element signature="e#7103#7141#0" expanded="true" />
-                <element signature="e#7304#7360#0" expanded="true" />
-                <element signature="e#7957#7989#0" expanded="true" />
-                <element signature="e#8116#8148#0" expanded="true" />
-                <element signature="e#8637#8669#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -103,11 +83,25 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/phpunit.xml" />
         <option value="$PROJECT_DIR$/.dreamfactory.php" />
-        <option value="$PROJECT_DIR$/src/Commands/GreetCommand.php" />
         <option value="$PROJECT_DIR$/sandman" />
-        <option value="$PROJECT_DIR$/src/bootstrap.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/Application.php" />
+        <option value="$PROJECT_DIR$/vendor/bin/phpunit" />
+        <option value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/.travis.yml" />
+        <option value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/PHP/CodeCoverage/Autoload.php" />
+        <option value="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Application.php" />
+        <option value="$PROJECT_DIR$/src/bootstrap.php" />
+        <option value="$PROJECT_DIR$/ErrorHandler.php" />
+        <option value="$PROJECT_DIR$/src/Utility/ErrorHandler.php" />
         <option value="$PROJECT_DIR$/src/Sandman.php" />
+        <option value="$PROJECT_DIR$/src/Commands/GreetCommand.php" />
+        <option value="$PROJECT_DIR$/src/Commands/Update.php" />
+        <option value="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/command_1.json" />
+        <option value="$PROJECT_DIR$/src/Commands/Install.php" />
+        <option value="$PROJECT_DIR$/src/Commands/FixPermissions.php" />
+        <option value="$PROJECT_DIR$/src/Commands/PermissionsFix.php" />
+        <option value="$PROJECT_DIR$/src/Commands/PermissionsCheck.php" />
+        <option value="$PROJECT_DIR$/src/Commands/Init.php" />
       </list>
     </option>
   </component>
@@ -173,21 +167,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sandman" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sandman" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -202,6 +182,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Commands" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -221,8 +205,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Commands" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/tests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Utility" />
     </key>
   </component>
   <component name="RunManager">
@@ -244,10 +232,11 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1368" height="746" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -259,23 +248,22 @@
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25377643" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29531723" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Assets" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32986766" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="REST Client" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32986766" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32732448" sideWeight="0.85005337" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="right" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985783" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Code Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986766" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
     </layout>
@@ -300,24 +288,44 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Sandman.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="50" selection-start="3741" selection-end="3741" vertical-scroll-proportion="0.0" vertical-offset="1408" max-vertical-offset="4960">
+          <folding>
+            <element signature="e#6#696#0" expanded="true" />
+            <element signature="e#730#776#0" expanded="true" />
+            <element signature="e#1233#1310#0" expanded="true" />
+            <element signature="e#1529#1560#0" expanded="true" />
+            <element signature="e#1614#1645#0" expanded="true" />
+            <element signature="e#1693#1724#0" expanded="true" />
+            <element signature="e#1939#2007#0" expanded="true" />
+            <element signature="e#2571#2603#0" expanded="true" />
+            <element signature="e#3159#3191#0" expanded="true" />
+            <element signature="e#5304#5413#0" expanded="true" />
+            <element signature="e#5760#5816#0" expanded="true" />
+            <element signature="e#6446#6478#0" expanded="true" />
+            <element signature="e#6603#6635#0" expanded="true" />
+            <element signature="e#7150#7182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sandman.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="672">
           <folding>
             <element signature="e#6#696#0" expanded="true" />
-            <element signature="e#730#772#0" expanded="true" />
-            <element signature="e#826#903#0" expanded="true" />
-            <element signature="e#1122#1153#0" expanded="true" />
-            <element signature="e#1195#1226#0" expanded="true" />
-            <element signature="e#1441#1509#0" expanded="true" />
-            <element signature="e#2073#2105#0" expanded="true" />
-            <element signature="e#2530#2562#0" expanded="true" />
-            <element signature="e#4743#4831#0" expanded="true" />
-            <element signature="e#5191#5223#0" expanded="true" />
-            <element signature="e#6099#6256#0" expanded="true" />
-            <element signature="e#7103#7141#0" expanded="true" />
-            <element signature="e#7304#7360#0" expanded="true" />
-            <element signature="e#7957#7989#0" expanded="true" />
-            <element signature="e#8116#8148#0" expanded="true" />
-            <element signature="e#8637#8669#0" expanded="true" />
+            <element signature="e#730#776#0" expanded="true" />
+            <element signature="e#1233#1310#0" expanded="true" />
+            <element signature="e#1529#1560#0" expanded="true" />
+            <element signature="e#1614#1645#0" expanded="true" />
+            <element signature="e#1693#1724#0" expanded="true" />
+            <element signature="e#1939#2007#0" expanded="true" />
+            <element signature="e#2571#2603#0" expanded="true" />
+            <element signature="e#3159#3191#0" expanded="true" />
+            <element signature="e#5304#5413#0" expanded="true" />
+            <element signature="e#5760#5816#0" expanded="true" />
+            <element signature="e#6446#6478#0" expanded="true" />
+            <element signature="e#6603#6635#0" expanded="true" />
+            <element signature="e#7150#7182#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -332,21 +340,19 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding>
             <element signature="e#6#696#0" expanded="true" />
-            <element signature="e#730#772#0" expanded="true" />
-            <element signature="e#826#903#0" expanded="true" />
-            <element signature="e#1122#1153#0" expanded="true" />
-            <element signature="e#1195#1226#0" expanded="true" />
-            <element signature="e#1441#1509#0" expanded="true" />
-            <element signature="e#2073#2105#0" expanded="true" />
-            <element signature="e#2530#2562#0" expanded="true" />
-            <element signature="e#4743#4831#0" expanded="true" />
-            <element signature="e#5191#5223#0" expanded="true" />
-            <element signature="e#6099#6256#0" expanded="true" />
-            <element signature="e#7103#7141#0" expanded="true" />
-            <element signature="e#7304#7360#0" expanded="true" />
-            <element signature="e#7957#7989#0" expanded="true" />
-            <element signature="e#8116#8148#0" expanded="true" />
-            <element signature="e#8637#8669#0" expanded="true" />
+            <element signature="e#730#776#0" expanded="true" />
+            <element signature="e#1233#1310#0" expanded="true" />
+            <element signature="e#1529#1560#0" expanded="true" />
+            <element signature="e#1614#1645#0" expanded="true" />
+            <element signature="e#1693#1724#0" expanded="true" />
+            <element signature="e#1939#2007#0" expanded="true" />
+            <element signature="e#2571#2603#0" expanded="true" />
+            <element signature="e#3159#3191#0" expanded="true" />
+            <element signature="e#5304#5413#0" expanded="true" />
+            <element signature="e#5760#5816#0" expanded="true" />
+            <element signature="e#6446#6478#0" expanded="true" />
+            <element signature="e#6603#6635#0" expanded="true" />
+            <element signature="e#7150#7182#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -374,11 +380,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -406,66 +412,52 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Commands/GreetCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sandman">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.dreamfactory.php">
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Output/OutputInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="46" selection-start="534" selection-end="534" vertical-scroll-proportion="0.5" vertical-offset="32" max-vertical-offset="576">
+        <state line="13" column="65" selection-start="287" selection-end="348" vertical-scroll-proportion="0.17486338" vertical-offset="0" max-vertical-offset="816">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application.php">
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/php-code-coverage/PHP/CodeCoverage/Autoload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="268" column="0" selection-start="2001" selection-end="8703" vertical-scroll-proportion="0.66765577" vertical-offset="4063" max-vertical-offset="4400">
-          <folding>
-            <element signature="e#7#267#0" expanded="true" />
-            <element signature="e#298#359#0" expanded="true" />
-            <element signature="e#865#1082#0" expanded="true" />
-            <element signature="e#1131#1163#0" expanded="true" />
-            <element signature="e#1194#1229#0" expanded="true" />
-            <element signature="e#2005#2037#0" expanded="true" />
-            <element signature="e#2439#2471#0" expanded="true" />
-            <element signature="e#4214#4298#0" expanded="true" />
-            <element signature="e#4638#4670#0" expanded="true" />
-            <element signature="e#5449#5637#0" expanded="true" />
-            <element signature="e#6380#6418#0" expanded="true" />
-            <element signature="e#6581#6637#0" expanded="true" />
-            <element signature="e#7835#7867#0" expanded="true" />
-            <element signature="e#7994#8026#0" expanded="true" />
-            <element signature="e#8487#8519#0" expanded="true" />
-          </folding>
+        <state line="54" column="19" selection-start="2282" selection-end="2282" vertical-scroll-proportion="0.34972677" vertical-offset="0" max-vertical-offset="928">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bin/phpunit">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="24" selection-start="1946" selection-end="1946" vertical-scroll-proportion="0.43715847" vertical-offset="0" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Helper/HelperInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="20" selection-start="620" selection-end="620" vertical-scroll-proportion="0.29143897" vertical-offset="0" max-vertical-offset="549">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Helper/HelperSet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="23" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.87431693" vertical-offset="0" max-vertical-offset="1152">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Application.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="389" selection-end="441" vertical-scroll-proportion="0.7596439" vertical-offset="0" max-vertical-offset="17712">
+        <state line="962" column="23" selection-start="30855" selection-end="30855" vertical-scroll-proportion="0.64738804" vertical-offset="15045" max-vertical-offset="17712">
           <folding>
             <element signature="e#7#236#0" expanded="true" />
+            <element signature="e#276#332#0" expanded="true" />
             <element signature="e#1611#1998#0" expanded="true" />
             <element signature="e#2333#2509#0" expanded="true" />
             <element signature="e#3016#3339#0" expanded="true" />
@@ -514,26 +506,257 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Helper/DialogHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="6" selection-start="530" selection-end="530" vertical-scroll-proportion="0.26865673" vertical-offset="0" max-vertical-offset="5760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.dreamfactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="549">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utility/ErrorHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="9" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.43715847" vertical-offset="640" max-vertical-offset="1216">
+          <folding>
+            <element signature="e#6#696#0" expanded="false" />
+            <element signature="e#738#885#0" expanded="false" />
+            <element signature="e#911#1237#0" expanded="false" />
+            <element signature="e#1857#1920#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="22" selection-start="812" selection-end="812" vertical-scroll-proportion="0.67030966" vertical-offset="0" max-vertical-offset="549">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="178" selection-end="178" vertical-scroll-proportion="0.26229507" vertical-offset="0" max-vertical-offset="549">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="36" selection-start="667" selection-end="667" vertical-scroll-proportion="0.57923496" vertical-offset="2" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/php-code-coverage/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="6" selection-start="94" selection-end="94" vertical-scroll-proportion="0.27874565" vertical-offset="0" max-vertical-offset="574">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Command/Command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="7" selection-start="3466" selection-end="3466" vertical-scroll-proportion="0.31902984" vertical-offset="1125" max-vertical-offset="5568">
+          <folding>
+            <element signature="e#3463#3513#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/Foo1Command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="23" selection-start="260" selection-end="260" vertical-scroll-proportion="0.26229507" vertical-offset="0" max-vertical-offset="549">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/Foo2Command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="574">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/Foo3Command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="574">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/Foo4Command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="574">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/Foo5Command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="574">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/FoobarCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="574">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/FooCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="592">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/command_1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="261" selection-end="261" vertical-scroll-proportion="0.17910448" vertical-offset="0" max-vertical-offset="536">
+          <folding>
+            <element signature="e#148#208#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Command/CommandTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="298" column="9" selection-start="13037" selection-end="13037" vertical-scroll-proportion="0.3880597" vertical-offset="4224" max-vertical-offset="5120">
+          <folding>
+            <element signature="e#7#236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/command_1.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="549">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/command_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="574">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/command_2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/command_2.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="12" selection-start="322" selection-end="322" vertical-scroll-proportion="0.55373406" vertical-offset="0" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Input/InputOption.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="6" selection-start="396" selection-end="396" vertical-scroll-proportion="0.20895523" vertical-offset="0" max-vertical-offset="2400">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/Install.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="30" selection-start="402" selection-end="402" vertical-scroll-proportion="0.34972677" vertical-offset="0" max-vertical-offset="1168">
+          <folding>
+            <element signature="e#739#785#0" expanded="true" />
+            <element signature="e#942#960#0" expanded="true" />
+            <element signature="e#1173#1205#0" expanded="true" />
+            <element signature="e#1568#2194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/Update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="28" selection-start="988" selection-end="988" vertical-scroll-proportion="0.26865673" vertical-offset="48" max-vertical-offset="880">
+          <folding>
+            <element signature="e#739#785#0" expanded="true" />
+            <element signature="e#942#959#0" expanded="true" />
+            <element signature="e#1544#2170#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Sandman.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="50" selection-start="3741" selection-end="3741" vertical-scroll-proportion="0.71910113" vertical-offset="1408" max-vertical-offset="4960">
+        <state line="112" column="0" selection-start="3633" selection-end="3633" vertical-scroll-proportion="0.80597013" vertical-offset="1360" max-vertical-offset="4080">
           <folding>
             <element signature="e#6#696#0" expanded="true" />
-            <element signature="e#730#772#0" expanded="true" />
-            <element signature="e#826#903#0" expanded="true" />
-            <element signature="e#1122#1153#0" expanded="true" />
-            <element signature="e#1195#1226#0" expanded="true" />
-            <element signature="e#1441#1509#0" expanded="true" />
-            <element signature="e#2073#2105#0" expanded="true" />
-            <element signature="e#2530#2562#0" expanded="true" />
-            <element signature="e#4743#4831#0" expanded="true" />
-            <element signature="e#5191#5223#0" expanded="true" />
-            <element signature="e#6099#6256#0" expanded="true" />
-            <element signature="e#7103#7141#0" expanded="true" />
-            <element signature="e#7304#7360#0" expanded="true" />
-            <element signature="e#7957#7989#0" expanded="true" />
-            <element signature="e#8116#8148#0" expanded="true" />
-            <element signature="e#8637#8669#0" expanded="true" />
+            <element signature="e#730#776#0" expanded="true" />
+            <element signature="e#1233#1310#0" expanded="true" />
+            <element signature="e#1529#1560#0" expanded="true" />
+            <element signature="e#1614#1645#0" expanded="true" />
+            <element signature="e#1693#1724#0" expanded="true" />
+            <element signature="e#1939#2007#0" expanded="true" />
+            <element signature="e#2571#2603#0" expanded="true" />
+            <element signature="e#3159#3191#0" expanded="true" />
+            <element signature="e#5304#5413#0" expanded="true" />
+            <element signature="e#5760#5816#0" expanded="true" />
+            <element signature="e#6446#6478#0" expanded="true" />
+            <element signature="e#6603#6635#0" expanded="true" />
+            <element signature="e#7150#7182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/PermissionsFix.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="41" selection-start="2326" selection-end="2326" vertical-scroll-proportion="1.2566845" vertical-offset="335" max-vertical-offset="1168">
+          <folding>
+            <element signature="e#6#696#0" expanded="true" />
+            <element signature="e#739#785#0" expanded="true" />
+            <element signature="e#942#967#0" expanded="true" />
+            <element signature="e#1187#1219#0" expanded="true" />
+            <element signature="e#1571#2197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/PermissionsCheck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="43" selection-start="2080" selection-end="2080" vertical-scroll-proportion="0.708561" vertical-offset="555" max-vertical-offset="1104">
+          <folding>
+            <element signature="e#6#696#0" expanded="true" />
+            <element signature="e#739#785#0" expanded="true" />
+            <element signature="e#893#920#0" expanded="true" />
+            <element signature="e#1142#1174#0" expanded="true" />
+            <element signature="e#1323#1949#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Commands/Init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="5" selection-start="1435" selection-end="1435" vertical-scroll-proportion="0.7668488" vertical-offset="299" max-vertical-offset="864">
+          <folding>
+            <element signature="e#6#696#0" expanded="true" />
+            <element signature="e#739#785#0" expanded="true" />
+            <element signature="e#893#908#0" expanded="true" />
+            <element signature="e#1118#1150#0" expanded="true" />
+            <element signature="e#1316#1348#0" expanded="true" />
           </folding>
         </state>
       </provider>

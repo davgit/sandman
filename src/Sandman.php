@@ -18,8 +18,16 @@
  */
 namespace DreamFactory\Sandman;
 
+use DreamFactory\Sandman\Utility\ErrorHandler;
+use Kisma\Core\Utility\FileSystem;
 use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Formatter\OutputFormatter;
+use Symfony\Component\Console\Formatter\OutputFormatterStyle;
+use Symfony\Component\Console\Helper\DialogHelper;
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
+use Symfony\Component\Console\Output\ConsoleOutput;
+use Symfony\Component\Console\Output\OutputInterface;
 
 /**
  * Sandman
@@ -35,7 +43,11 @@ class Sandman extends Application
     /**
      * @type string
      */
-    const PACKAGE_VERSION = '0.1.0';
+    const PACKAGE_VERSION = '{package_version}';
+    /**
+     * @type string
+     */
+    const RELEASE_DATE = '{release_date}';
     /**
      * @type string
      */
@@ -73,9 +85,13 @@ class Sandman extends Application
     {
         if ( null === $output )
         {
-            $_styles = Factory::createAdditionalStyles();
+            $_styles = array(
+                'highlight' => new OutputFormatterStyle( 'red' ),
+                'warning'   => new OutputFormatterStyle( 'black', 'yellow' ),
+            );
+
             $_formatter = new OutputFormatter( null, $_styles );
-            $_output = new ConsoleOutput( ConsoleOutput::VERBOSITY_NORMAL, null, $_formatter );
+            $output = new ConsoleOutput( ConsoleOutput::VERBOSITY_NORMAL, null, $_formatter );
         }
 
         return parent::run( $input, $output );
@@ -86,55 +102,54 @@ class Sandman extends Application
      */
     public function doRun( InputInterface $input, OutputInterface $output )
     {
-        $this->io = new ConsoleIO( $input, $output, $this->getHelperSet() );
-
         if ( version_compare( PHP_VERSION, '5.3.2', '<' ) )
         {
             $output->writeln(
-                '<warning>Composer only officially supports PHP 5.3.2 and above, you will most likely encounter problems with your PHP ' .
+                '<warning>Composer only officially supports PHP 5.4.0 and above, you will most likely encounter problems with your PHP ' .
                 PHP_VERSION .
-                ', upgrading is strongly recommended.</warning>'
+                '. Upgrading is strongly recommended.</warning>'
             );
         }
 
-        if ( defined( 'COMPOSER_DEV_WARNING_TIME' ) && $this->getCommandName( $input ) !== 'self-update' && $this->getCommandName( $input ) !== 'selfupdate' )
+        if ( defined( 'SANDMAN_DEV_WARNING_TIME' ) && $this->getCommandName( $input ) !== 'self-update' && $this->getCommandName( $input ) !== 'selfupdate' )
         {
-            if ( time() > COMPOSER_DEV_WARNING_TIME )
+            if ( time() > SANDMAN_DEV_WARNING_TIME )
             {
                 $output->writeln(
                     sprintf(
-                        '<warning>Warning: This development build of composer is over 30 days old. It is recommended to update it by running "%s self-update" to get the latest version.</warning>',
+                        '<warning>Warning: This development build of sandman is over 30 days old. It is recommended to update it by running "%s self-update" to get the latest version.</warning>',
                         $_SERVER['PHP_SELF']
                     )
                 );
             }
         }
 
-        if ( getenv( 'COMPOSER_NO_INTERACTION' ) )
+        if ( getenv( 'SANDMAN_NO_INTERACTION' ) )
         {
             $input->setInteractive( false );
         }
 
         if ( $input->hasParameterOption( '--profile' ) )
         {
-            $startTime = microtime( true );
-            $this->io->enableDebugging( $startTime );
+            $_startTime = microtime( true );
         }
 
-        if ( $newWorkDir = $this->getNewWorkingDir( $input ) )
+        $_workingDirectory = $this->_getWorkingDirectory( $input );
+
+        if ( !empty( $_workingDirectory ) )
         {
-            $oldWorkingDir = getcwd();
-            chdir( $newWorkDir );
+            $_priorDirectory = getcwd();
+            chdir( $_workingDirectory );
         }
 
-        $result = parent::doRun( $input, $output );
+        $_result = parent::doRun( $input, $output );
 
-        if ( isset( $oldWorkingDir ) )
+        if ( isset( $_priorDirectory ) )
         {
-            chdir( $oldWorkingDir );
+            chdir( $_priorDirectory );
         }
 
-        if ( isset( $startTime ) )
+        if ( isset( $_startTime ) )
         {
             $output->writeln(
                 '<info>Memory usage: ' .
@@ -142,104 +157,30 @@ class Sandman extends Application
                 'MB (peak: ' .
                 round( memory_get_peak_usage() / 1024 / 1024, 2 ) .
                 'MB), time: ' .
-                round( microtime( true ) - $startTime, 2 ) .
+                round( microtime( true ) - $_startTime, 2 ) .
                 's'
             );
         }
 
-        return $result;
+        return $_result;
     }
 
     /**
      * @param  InputInterface $input
      *
+     * @return mixed
      * @throws \RuntimeException
      */
-    private function getNewWorkingDir( InputInterface $input )
+    protected function _getWorkingDirectory( InputInterface $input )
     {
-        $workingDir = $input->getParameterOption( array( '--working-dir', '-d' ) );
-        if ( false !== $workingDir && !is_dir( $workingDir ) )
+        $_path = $input->getParameterOption( array( '--working-dir', '-d' ) );
+
+        if ( false !== $_path && !is_dir( $_path ) )
         {
             throw new \RuntimeException( 'Invalid working directory specified.' );
         }
 
-        return $workingDir;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function renderException( $exception, $output )
-    {
-        try
-        {
-            $composer = $this->getComposer( false );
-            if ( $composer )
-            {
-                $config = $composer->getConfig();
-
-                $minSpaceFree = 1024 * 1024;
-                if ( ( ( $df = @disk_free_space( $dir = $config->get( 'home' ) ) ) !== false && $df < $minSpaceFree ) ||
-                     ( ( $df = @disk_free_space( $dir = $config->get( 'vendor-dir' ) ) ) !== false && $df < $minSpaceFree )
-                )
-                {
-                    $output->writeln( '<error>The disk hosting ' . $dir . ' is full, this may be the cause of the following exception</error>' );
-                }
-            }
-        }
-        catch ( \Exception $e )
-        {
-        }
-
-        return parent::renderException( $exception, $output );
-    }
-
-    /**
-     * @param  bool $required
-     * @param  bool $disablePlugins
-     *
-     * @throws JsonValidationException
-     * @return \Composer\Composer
-     */
-    public function getComposer( $required = true, $disablePlugins = false )
-    {
-        if ( null === $this->composer )
-        {
-            try
-            {
-                $this->composer = Factory::create( $this->io, null, $disablePlugins );
-            }
-            catch ( \InvalidArgumentException $e )
-            {
-                if ( $required )
-                {
-                    $this->io->write( $e->getMessage() );
-                    exit( 1 );
-                }
-            }
-            catch ( JsonValidationException $e )
-            {
-                $errors = ' - ' . implode( PHP_EOL . ' - ', $e->getErrors() );
-                $message = $e->getMessage() . ':' . PHP_EOL . $errors;
-                throw new JsonValidationException( $message );
-            }
-
-        }
-
-        return $this->composer;
-    }
-
-    /**
-     * @return IOInterface
-     */
-    public function getIO()
-    {
-        return $this->io;
-    }
-
-    public function getHelp()
-    {
-        return self::$logo . parent::getHelp();
+        return $_path;
     }
 
     /**
@@ -255,7 +196,7 @@ class Sandman extends Application
         {
             foreach ( $_classes as $_class )
             {
-                $_class = str_ireplace( '.php', null, $_class );
+                $_class = __NAMESPACE__ . '\\Commands\\' . str_ireplace( '.php', null, $_class );
                 $_commands[] = new $_class();
             }
         }
@@ -273,7 +214,7 @@ class Sandman extends Application
      */
     public function getLongVersion()
     {
-        return parent::getLongVersion() . ' ' . Composer::RELEASE_DATE;
+        return parent::getLongVersion() . ' ' . static::RELEASE_DATE;
     }
 
     /**
@@ -281,13 +222,17 @@ class Sandman extends Application
      */
     protected function getDefaultInputDefinition()
     {
-        $definition = parent::getDefaultInputDefinition();
-        $definition->addOption( new InputOption( '--profile', null, InputOption::VALUE_NONE, 'Display timing and memory usage information' ) );
-        $definition->addOption(
+        $_definition = parent::getDefaultInputDefinition();
+
+        $_definition->addOption(
+            new InputOption( '--profile', null, InputOption::VALUE_NONE, 'Display timing and memory usage information' )
+        );
+
+        $_definition->addOption(
             new InputOption( '--working-dir', '-d', InputOption::VALUE_REQUIRED, 'If specified, use the given directory as working directory.' )
         );
 
-        return $definition;
+        return $_definition;
     }
 
     /**
@@ -295,10 +240,10 @@ class Sandman extends Application
      */
     protected function getDefaultHelperSet()
     {
-        $helperSet = parent::getDefaultHelperSet();
+        $_helperSet = parent::getDefaultHelperSet();
 
-        $helperSet->set( new DialogHelper() );
+        $_helperSet->set( new DialogHelper() );
 
-        return $helperSet;
+        return $_helperSet;
     }
 }

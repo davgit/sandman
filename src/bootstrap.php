@@ -18,8 +18,10 @@
  */
 require_once( __DIR__ . '/../vendor/autoload.php' );
 
-use DreamFactory\Sandman\Commands;
+use DreamFactory\Sandman\Sandman;
 
-$_app = new Application();
-$_app->add( new GreetCommand );
+/**
+ * Instantiate and run
+ */
+$_app = new Sandman();
 $_app->run();

@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "eab5795f2cfe878d5457269862274eca",
+    "hash": "8bd9250365e939ce8355020140b68a79",
     "packages": [
         {
             "name": "kisma/kisma",
-            "version": "0.2.32",
+            "version": "0.2.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lucifurious/kisma.git",
-                "reference": "ac0545a9303da0c32bb397a16475663448785f4a"
+                "reference": "eb2f5902e5be4edc0a38521d08de5c2702fe15a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lucifurious/kisma/zipball/ac0545a9303da0c32bb397a16475663448785f4a",
-                "reference": "ac0545a9303da0c32bb397a16475663448785f4a",
+                "url": "https://api.github.com/repos/lucifurious/kisma/zipball/eb2f5902e5be4edc0a38521d08de5c2702fe15a1",
+                "reference": "eb2f5902e5be4edc0a38521d08de5c2702fe15a1",
                 "shasum": ""
             },
             "require": {
@@ -60,7 +60,7 @@
                 "php5",
                 "utility"
             ],
-            "time": "2014-03-13 14:29:25"
+            "time": "2014-03-15 21:37:13"
         },
         {
             "name": "monolog/monolog",
@@ -340,7 +340,7 @@
         },
         {
             "name": "symfony/monolog-bridge",
-            "version": "2.4.x-dev",
+            "version": "v2.4.2",
             "target-dir": "Symfony/Bridge/Monolog",
             "source": {
                 "type": "git",
@@ -832,7 +832,7 @@
     "stability-flags": {
         "kisma/kisma": 0,
         "symfony/console": 0,
-        "symfony/monolog-bridge": 20,
+        "symfony/monolog-bridge": 0,
         "phpunit/phpunit": 0
     },
     "platform": {

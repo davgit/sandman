@@ -19,32 +19,30 @@
 namespace DreamFactory\Sandman\Commands;
 
 use Symfony\Component\Console\Command\Command;
-use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * GreetCommand
+ * Update
  */
-class GreetCommand extends Command
+class Update extends Command
 {
+    //*************************************************************************
+    //	Methods
+    //*************************************************************************
+
+    /**
+     * {@InheritDoc}
+     */
     protected function configure()
     {
-        $this
-            ->setName( 'demo:greet' )
-            ->setDescription( 'Greet someone' )
-            ->addArgument(
-                'name',
-                InputArgument::OPTIONAL,
-                'Who do you want to greet?'
-            )
-            ->addOption(
-                'yell',
-                null,
-                InputOption::VALUE_NONE,
-                'If set, the task will yell in uppercase letters'
-            );
+        $this->setName( 'update' )->setAliases( array( 'upd', 'up' ) )->setDescription( 'Update a DSP installation.' )->addOption(
+            'clean',
+            null,
+            InputOption::VALUE_NONE,
+            'Perform an in-place DSP update, including dependencies.'
+        );
     }
 
     /**
@@ -65,14 +63,6 @@ class GreetCommand extends Command
      */
     protected function execute( InputInterface $input, OutputInterface $output )
     {
-        $_name = $input->getArgument( 'name' );
-        $_name = 'Hello ' . ( $_name ? : null );
-
-        if ( $input->getOption( 'yell' ) )
-        {
-            $_name = strtoupper( $_name );
-        }
-
-        $output->writeln( $_name );
+        $output->writeln( 'update run.' );
     }
 }
