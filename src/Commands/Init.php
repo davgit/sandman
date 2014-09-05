@@ -36,7 +36,8 @@ class Init extends Command
      */
     protected function configure()
     {
-        $this->setName( 'init' )->setDescription( 'Initializes the directory structure for DSP installation.' );
+        $this->setName( 'init' )
+            ->setDescription( 'Initializes the directory structure for DSP installation.' );
     }
 
     /**

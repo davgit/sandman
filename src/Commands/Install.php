@@ -39,7 +39,7 @@ class Install extends Command
     {
         $this->setName( 'install' )->setDescription( 'Perform a DSP installation.' )->addOption(
             'clean',
-            array( '-c' ),
+            array('-c'),
             InputOption::VALUE_NONE,
             'Perform a clean operation. Removes composer.lock file and entire vendor directory before installation.'
         );
